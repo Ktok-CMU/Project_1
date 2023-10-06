@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se233.project.MenuController">
+   <children>
+      <ImageView fx:id="waterImg" fitHeight="300.0" fitWidth="300.0" layoutX="101.0" layoutY="130.0" pickOnBounds="true">
+         <image>
+            <Image url="@WatermarkLogo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="resizeImg" fitHeight="300.0" fitWidth="300.0" layoutX="600.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ResizeLogo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="waterLabel" alignment="CENTER" layoutX="168.0" layoutY="85.0" text="Image watermark" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="resizeLabel" alignment="CENTER" layoutX="679.0" layoutY="85.0" prefHeight="30.0" prefWidth="142.0" text="Image resizer" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="waterBut" layoutX="176.0" layoutY="451.0" mnemonicParsing="false" onAction="#openWaterDrop" prefHeight="50.0" prefWidth="150.0" text="Watermark">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="resizeBut" layoutX="675.0" layoutY="451.0" mnemonicParsing="false" onAction="#openResizeDrop" prefHeight="50.0" prefWidth="150.0" text="Resize">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

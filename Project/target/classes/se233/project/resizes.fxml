@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se233.project.MainController">
+   <children>
+      <Label layoutX="35.0" layoutY="30.0" style="-fx-font-size: 24px;" text="Image Resizer" />
+      <Label layoutX="35.0" layoutY="80.0" text="Width:" />
+      <Label layoutX="35.0" layoutY="120.0" text="Height:" />
+      <Label layoutX="35.0" layoutY="160.0" text="Percentage:" />
+
+      <TextField fx:id="widthField" layoutX="150.0" layoutY="75.0" promptText="Width" />
+      <TextField fx:id="heightField" layoutX="150.0" layoutY="115.0" promptText="Height" />
+      <TextField fx:id="percentField" layoutX="150.0" layoutY="155.0" promptText="Percent" />
+
+      <CheckBox fx:id="keepRatioCheckbox" layoutX="35.0" layoutY="195.0" text="Keep Aspect Ratio" />
+
+      <ImageView fx:id="imageView" fitHeight="200.0" fitWidth="300.0" layoutX="250.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true" />
+
+      <!-- Original imported image -->
+      <ImageView fx:id="importedImageView" fitHeight="150.0" fitWidth="200.0" layoutX="350.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Gallery icon.png" />
+         </image>
+      </ImageView>
+
+      <Button layoutX="250.0" layoutY="300.0" mnemonicParsing="false" onAction="#resizeImage" text="Resize Image" />
+      <Button fx:id="importButton" layoutX="350.0" layoutY="300.0" mnemonicParsing="false" onAction="#importImage" text="Import Image" />
+
+      <Label fx:id="resultLabel" layoutX="35.0" layoutY="350.0" style="-fx-font-size: 18px;" />
+      <Button layoutX="448.0" layoutY="300.0" mnemonicParsing="false" onAction="#saveImage" text="Save" />
+   </children>
+</AnchorPane>
