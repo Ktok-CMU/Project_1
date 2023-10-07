@@ -19,7 +19,7 @@
       <TextField fx:id="heightField" layoutX="150.0" layoutY="115.0" promptText="Height" />
       <TextField fx:id="percentField" layoutX="150.0" layoutY="155.0" promptText="Percent" />
 
-      <CheckBox fx:id="keepRatioCheckbox" layoutX="35.0" layoutY="195.0" text="Keep Aspect Ratio" />
+      <CheckBox fx:id="keepRatioCheckbox" layoutX="35.0" layoutY="195.0" onAction="#checkBox" text="Keep Aspect Ratio" />
 
       <ImageView fx:id="imageView" fitHeight="200.0" fitWidth="300.0" layoutX="250.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true" />
 
